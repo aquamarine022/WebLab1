@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Catlab</title>
+    <link rel="stylesheet" href="stylesheets/stylesheet.css">
+    <link rel="stylesheet" href="stylesheets/header.css">
+    <link rel="stylesheet" href="stylesheets/footer.css">
+    <link rel="stylesheet" href="stylesheets/form.css">
+    <link rel="stylesheet" href="stylesheets/table.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <pre class="head_pre">Брель Мария<br>P3207<br>408322</pre>
+    </header>
+    <div class="first-row">
+        <div class="container">
+            <div>
+                <form>
+                    <p class="cordsText">Выберите x:</p>
+                    <input class="custom-button" type="button" name="xValue" value="-3">
+                    <input class="custom-button" type="button" name="xValue" value="-2">
+                    <input class="custom-button" type="button" name="xValue" value="-1">
+                    <input class="custom-button" type="button" name="xValue" value="0">
+                    <input class="custom-button" type="button" name="xValue" value="1">
+                    <input class="custom-button" type="button" name="xValue" value="2">
+                    <input class="custom-button" type="button" name="xValue" value="3">
+                    <input class="custom-button" type="button" name="xValue" value="4">
+                    <input class="custom-button" type="button" name="xValue" value="5">
+                </form>
+            </div>
+            <div class="form">
+                <p>Введите y:</p>
+                <input name="yValue" type="text" placeholder="(от -3 до 5)" maxlength="10">
+            </div>
+            <div>
+                <form class="form">
+                    <p>Выберите R:</p>
+                    <select id="rValue">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    </select>
+                </form>
+            </div>
+            <div>
+                <button class="submit-button" id="submit">Проверить попадание</button>
+            </div>
+        </div>
+        <div class="graph">
+            <img src="areas.png">
+        </div>
+    </div>
+    <div class="table">
+        <table id="resultTable" class="resTable">
+            <thead>
+            <tr>
+                <th>X</th>
+                <th>Y</th>
+                <th>R</th>
+                <th>ОДЗ</th>
+                <th>Текущее время</th>
+                <th>Время выполнения скрипта</th>
+            </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+
+    </div>
+    <footer>
+        <img src="catty.avif">
+    </footer>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+footer{
+    position:fixed;
+    left:0;
+    bottom:0;
+    margin: 0;
+    padding: 0;
+    height: 70px;
+    background-color: rgb(107, 163, 209);
+    width: 100%;
+    text-align: center;
+}
+
+footer:hover{
+    box-shadow: 0 0 50px rgb(107, 163, 209);
+}
+
+footer img{
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 40%;
+}
+
+footer img:hover{
+    transform: scale(1.2);
+}

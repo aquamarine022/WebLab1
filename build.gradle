@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+}
+
+group = 'main'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation files('fastcgi-lib.jar')
+}
+jar{
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+
+    manifest {
+        attributes 'Main-Class' : 'main.App'
+    }
+
+    from{
+        configurations.runtimeClasspath.collect {it.isDirectory() ? it : zipTree(it)}
+    }
+}

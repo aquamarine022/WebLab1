@@ -1,0 +1,26 @@
+header{
+    top: 0;
+    height: 90px;
+    width: 100%;
+    padding: 10px 0 0 0;
+    text-align: center;
+    margin: 0;
+    position: fixed;
+    background-color: rgb(107, 163, 209);
+}
+
+header pre{
+    font-family: cursive;
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-size: 19px;
+}
+
+header:hover{
+    box-shadow: 0 0 50px rgb(107, 163, 209);
+}
+
+header pre:hover{
+    transform: scale(1.2);
+}

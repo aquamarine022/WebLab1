@@ -1,0 +1,96 @@
+*{
+    /*border: 1px solid green;*/
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgba(128, 191, 240, 0.5);
+    display: grid;
+    place-items: center;
+    flex-direction: column;
+    grid-template-rows: 1fr auto;
+
+}
+
+.first-row{
+    display: flex;
+    flex-direction: row;
+    padding: 80px;
+    width: 60%;
+    margin-top: 140px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    background-color: rgba(128, 191, 240, 0.5);
+    flex: 1;
+}
+
+.first-row:hover{
+    box-shadow: 0 0 50px rgb(128, 191, 240);
+}
+
+.container{
+    width: 70%;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0 0 10px;
+    font-size: 20px;
+
+}
+
+.cordsText{
+    margin: 0;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 770px) {
+    .container{
+        width: 100%;
+        align-content: center;
+    }
+
+    .first-row{
+        flex-direction: column;
+    }
+    
+}
+
+@media (max-width: 480px) {
+    .form{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+}
+.form p {
+    margin-right: 10px;
+}
+
+.graph{
+    border: 5px solid rgb(107, 163, 209);
+    border-radius: 15px;
+    display: inline-block;
+    overflow: hidden;
+    margin-left: 20px;
+    min-width: 200px;
+    min-height: 200px;
+}
+
+.graph img{
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+@media (min-width: 771px) {
+    .graph:hover{
+        transform: scale(1.2);
+    }
+}
+
+

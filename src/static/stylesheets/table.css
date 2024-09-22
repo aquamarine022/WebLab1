@@ -1,0 +1,29 @@
+.resTable {
+    width: 100%;
+    margin-bottom: 120px;
+}
+
+/* Стили заголовка таблицы */
+.resTable thead {
+    background-color: rgb(107, 163, 209);
+    color: white;
+}
+
+.resTable th {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 2px solid white;
+}
+
+.resTable tbody tr {
+    transition: background-color 0.3s;
+}
+
+.resTable tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.resTable td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}

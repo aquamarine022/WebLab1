@@ -1,0 +1,66 @@
+.custom-button {
+    background-color: rgb(107, 163, 209);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 0;
+    margin-bottom: 5px;
+    width: 40px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.custom-button:hover {
+    background-color: rgb(59, 117, 159);
+}
+
+.custom-button:focus{
+    background-color: rgb(59, 117, 159);
+}
+
+.active-button {
+    background-color: rgb(59, 117, 159);
+}
+
+input[type="text"], textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    max-width: 80px;
+}
+
+input[type="text"]:focus, textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+select {
+    padding: 10px;
+    border: 1px solid rgba(209, 224, 246, 0.5);
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.submit-button{
+    background-color: rgb(107, 163, 209);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 200px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: rgb(59, 117, 159);
+}
